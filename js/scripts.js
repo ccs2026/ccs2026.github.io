@@ -3,6 +3,18 @@ jQuery(function ($) {
     'use strict';
 
     // --------------------------------------------------------------------
+    // Calls Dropdown Menu 
+    // --------------------------------------------------------------------
+    $('.navbar-nav .dropdown').hover(
+        function() {
+          $(this).addClass('open');
+        },
+        function() {
+          $(this).removeClass('open');
+        }
+      );
+
+    // --------------------------------------------------------------------
     // PreLoader
     // --------------------------------------------------------------------
 
@@ -14,15 +26,8 @@ jQuery(function ($) {
     // One Page Navigation
     // --------------------------------------------------------------------
 
-    (function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 50) {
-                $('nav.navbar').addClass('sticky-nav');
-            }
-            else {
-                $('nav.navbar').removeClass('sticky-nav');
-            }
-        });
+    (function() {
+            $('nav.navbar').addClass('sticky-nav');
     }());
 
     // --------------------------------------------------------------------
