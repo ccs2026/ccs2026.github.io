@@ -37,7 +37,7 @@
     <header class="header">
         <!-- Navigation -->
         <nav class="navbar main-menu" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -49,16 +49,36 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden"><a href="#page-top"></a></li>
                         <!--<li><a class="page-scroll" href="#section-about">About</a></li>-->
-                        <li><a class="page-scroll" href="#section-cfp">Calls</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Calls <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" id="calls-menu">
+                                <li><a class="page-scroll" href="#section-cfp">Abstracts</a></li>
+                                <li><a class="page-scroll" href="#call-for-satellites">Satellites</a></li>
+                            </ul>
+                        </li>
+                        
                         <li><a class="page-scroll" href="#section-speakers">Speakers</a></li>
                         <li><a class="page-scroll" href="#section-program">Program</a></li>
                         <li><a class="page-scroll" href="#section-venue">Venue</a></li>
-                        <li><a class="page-scroll" href="#section-registration">Registration</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Registration <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" id="registration-menu">
+                                <li><a class="page-scroll" href="#section-registration">Conference</a></li>
+                                <li><a class="page-scroll" href="#open-arms-grant">Open Arms Grant</a></li>
+                            </ul>
+                        </li>
+
                         <li><a class="page-scroll" href="#section-organizers">Organizers &amp; Sponsors</a></li>
                     </ul>
                 </div>
