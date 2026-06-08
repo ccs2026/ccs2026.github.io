@@ -37,7 +37,7 @@ Author: uiCookies.com
 # -------------------------------------------------------------------*/
 
 body {
-    font-family : 'Raleway', sans-serif;
+	font-family: Arial, sans-serif;
     font-size   : 22px;
     line-height : 1.8em;
     color       : #353e55;
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size   : 50px;
     line-height : 1.3em;
-    font-weight : 1000;
+    font-weight : 200;
     }
 
 h2 {
@@ -94,7 +94,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #fd367e;
+    color              : #00A67D;;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -139,7 +139,7 @@ ul {
     border-radius  : 0;
     font-weight    : 500;
     border-width   : 2px;
-    text-transform : uppercase;
+	font-family: Arial, sans-serif;
     }
 
 .btn-lg {
@@ -149,16 +149,17 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #fd367e;
-    border-color     : #fd367e;
+    background-color : #005a43;
+    border-color     : #006249;
+	
     }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
     background   : transparent;
-    color        : #fd367e;
-    border-color : #fd367e;
+    color        : #00A67D;
+    border-color : #00A67D;
     }
 
 /*btn-default*/
@@ -172,8 +173,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
     background-color : transparent;
-    color            : #fd367e;
-    border-color     : #fd367e;
+    color            : #005a43;
+    border-color     : #006249;
     }
 
 button:focus,
@@ -241,8 +242,7 @@ button:focus,
     padding        : 30px 0;
     background     : transparent;
     margin         : 0;
-    font-size      : 15px;
-    text-transform : uppercase;
+    font-size      : 19px;
     }
 
 @media (max-width : 768px) {
@@ -280,7 +280,7 @@ button:focus,
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
-    color      : #fd367e;
+    color      : #005a43;
     background : transparent;
     }
 
@@ -346,7 +346,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bg-image.jpg");
+    background            : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-image.jpg");
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -354,7 +354,7 @@ button:focus,
     min-height            : 700px;
     vertical-align        : middle;
     position              : relative;
-    background-attachment : fixed;
+    background-attachment : scroll;
     background-repeat     : no-repeat;
     background-position   : center center;
     overflow              : hidden;
@@ -372,21 +372,21 @@ button:focus,
     padding           : 0 10%;
     transform         : translateY(-50%);
     -webkit-transform : translateY(-50%);
-    -moz-transform    : translateY(-50%);
+    -moz-transform    : translateY(-50%); 
     }
 
 .jumbotron .content h1 {
     color       : #ffffff;
-    font-weight : bold;
+	/* font-weight : bold; */ 
     }
 
 .jumbotron .content h2 {
     color       : #ffffff;
-    font-weight : bold;
+      /* font-weight : bold; */
     }
 
 .jumbotron .content p.lead {
-    font-size   : 30px;
+    /* font-size   : 30px; */
     line-height : 1.5em;
     color       : rgba(255, 255, 255, .7);
     }
@@ -694,7 +694,7 @@ button:focus,
 .form-control:focus,
 .form-control:active {
     box-shadow   : none;
-    border-color : #fd367e;
+    border-color : #00906c;
     }
 
 
@@ -776,7 +776,7 @@ button:focus,
 /* ---------------------------------------------- */
 
 .navbar-brand img {
-    height: 40px; 
+    height: 42px; 
     margin-right: 10px; 
 }
 
