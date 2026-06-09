@@ -363,10 +363,10 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    top               : 50%;
+    top               : 55%;
     left              : 0;
     right             : 0;
-    height            : 30%;
+   /* height            : 30%;*/
     width             : 100%;
     margin            : 0 auto;
     padding           : 0 10%;
@@ -413,7 +413,7 @@ button:focus,
     .jumbotron .content p.lead {
         font-size : 22px;
         }
-    }
+	}
 
 /*---------------------------
  * Section Wrapper
