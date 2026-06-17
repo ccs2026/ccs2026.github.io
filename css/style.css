@@ -26,6 +26,7 @@ Author: uiCookies.com
 	    12.2. Contact Form
 	13. Footer / .footer
 	14. Preloader / #preloader
+	15. Custom Navbar Override
 
 
 # [Color codes]
@@ -36,19 +37,19 @@ Author: uiCookies.com
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
 
+
+/*--------------------------------------
+ * Global Typography
+ *-------------------------------------*/
 body {
 	font-family: Arial, sans-serif;
-    font-size   : 22px;
-    line-height : 1.8em;
-    color       : #353e55;
-    font-weight : 100;
-    background  : #ffffff;
-    border      : 10px solid #fff;
-    }
-
-/* --------------------------------------
- * Global Typography
- *------------------------------------------*/
+	font-size   : 22px;
+	line-height : 1.8em;
+	color       : #353e55;
+	font-weight : 100;
+	background  : #ffffff;
+	border      : 10px solid #fff;
+	}
 
 h1, h2, h3, h4, h5, h6 {
     margin : 0 0 15px;
@@ -90,9 +91,10 @@ h6 {
     line-height : 24px;
     }
 
-/* --------------------------------------
- * LINK STYLE
- *------------------------------------------*/
+
+/*--------------------------------------
+ * Link Style
+ *-------------------------------------*/
 a {
     color              : #00A67D;;
     text-decoration    : none;
@@ -131,8 +133,11 @@ ul {
     list-style : none;
     }
 
-/*Button Style*/
-.btn {
+
+/*--------------------------------------
+ * Button Style
+ *-------------------------------------*/
+ .btn {
     padding        : 10px 30px;
     margin-bottom  : 0;
     font-size      : 20px;
@@ -147,7 +152,7 @@ ul {
     padding   : 15px 30px
     }
 
-/*btn-primary*/
+/* Primary */
 .btn-primary {
     background-color : #005a43;
     border-color     : #006249;
@@ -162,7 +167,7 @@ ul {
     border-color : #00A67D;
     }
 
-/*btn-default*/
+/* Default t*/
 .btn-default {
     color            : #ffffff;
     background-color : transparent;
@@ -183,9 +188,15 @@ button:focus,
     outline : none;
     }
 
-/* --------------------
+
+/* Custom Buttons */
+.btn-pill {
+	border-radius: 15px;
+}
+
+/*--------------------------------------
  * Section Background
- * -------------------*/
+ *-------------------------------------*/
 
 .gray-bg {
     background-color : #f0f1f3;
@@ -197,18 +208,19 @@ button:focus,
     background-color : #ffffff;
     }
 
-/* --------------------
- *  main Wrapper
- * -------------------*/
+
+/*--------------------------------------
+ * Main Wrapper
+ *-------------------------------------*/
 #main-wrapper {
     background : #ffffff;
     overflow   : hidden;
     }
 
-/*-----------------------------
- * NAVIGATION & HEADER STYLE
- *-------------------------------*/
-
+	
+/*--------------------------------------
+ * Navigation and Header Style
+ *-------------------------------------*/
 .header {
     position : absolute;
     left     : 15px;
@@ -217,7 +229,8 @@ button:focus,
     z-index  : 9;
     }
 
-/*Logo*/
+
+/* Logo */
 .navbar-brand {
     padding : 0;
     height  : auto;
@@ -235,8 +248,8 @@ button:focus,
         }
     }
 
-/*navbar*/
 
+/* Navbar */
 .navbar {
     border-radius  : 0;
     padding        : 30px 0;
@@ -251,7 +264,8 @@ button:focus,
         }
     }
 
-/*navbar toggle*/
+
+/* Navbar Toggle */
 .navbar-toggle {
     margin        : 5px 0;
     padding       : 11px 10px;
@@ -266,8 +280,8 @@ button:focus,
     background: #0e1555;
     }
 
-/*Navigation Style*/
 
+/*Navigation Style*/
 .main-menu .navbar-right {
     margin-right : -15px;
     }
@@ -341,10 +355,10 @@ button:focus,
         }
     }
 
-/*-------------------
- * Jumbotron
- *-------------------*/
 
+/*--------------------------------------
+ * Jumbotron
+ *-------------------------------------*/
 .jumbotron {
     background            : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-image.jpg");
     background-size       : cover;
@@ -415,16 +429,68 @@ button:focus,
         }
 	}
 
-/*---------------------------
+/*--------------------------------------
+ * venue.html
+ *-------------------------------------*/
+ .venue-row {
+    margin-bottom: 10px;
+	margin-left: 1px;
+}
+
+.venue-text {
+    text-align: left;
+}
+
+.venue-img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.venue-map {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .venue-row .lead {
+        font-size: 18px;
+    }
+
+    .venue-img {
+        height: 310px;
+    }
+}
+
+@media (max-width: 991px) {
+    .venue-text {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+	.venue-row .lead {
+		font-size: 18px;
+	}
+
+    .venue-img {
+        height: auto;
+    }
+}
+
+
+/*--------------------------------------
  * Section Wrapper
- *---------------------------*/
+ *-------------------------------------*/
 .section-wrapper {
     padding : 100px 0;
     }
 
-/*---------------------------
- * Section Title
- *---------------------------*/
+
+/*--------------------------------------
+ * Section Title 
+ *-------------------------------------*/
 .section-title {
     margin-bottom : 60px;
     text-align    : center;
@@ -439,9 +505,10 @@ button:focus,
     color     : #888888;
     }
 
-/* ----------------------------------------------
+
+/*--------------------------------------
  * About Event
- *-----------------------------------------------*/
+ *-------------------------------------*/
 .about-event .lead {
     font-size   : 22px;
     line-height : 1.7em;
@@ -457,10 +524,10 @@ button:focus,
     color : #353e55;
     }
 
-/* ----------------------------------------------
- * Team Section
- *-----------------------------------------------*/
 
+/*--------------------------------------
+ * Team Selection
+ *-------------------------------------*/
 .team .thumbnail {
     padding          : 0;
     line-height      : 22px;
@@ -498,7 +565,6 @@ button:focus,
     font-weight: normal;
     }
 
-
 .team .social-links li {
     display      : inline-block;
     margin-right : 3px;
@@ -519,9 +585,10 @@ button:focus,
     color : #333;
     }
 
-/* --------------------------
+
+/*--------------------------------------
  * Agenda
- *---------------------------*/
+ *-------------------------------------*/
 .section-ajenda .session {
     padding       : 15px 0;
     border-left   : 1px solid #eeeeee;
@@ -550,9 +617,10 @@ button:focus,
     line-height : 1;
     }
 
-/* --------------------------
+
+/*--------------------------------------
  * Pricing Table
- *---------------------------*/
+ *-------------------------------------*/
 
 .pricing-section .pricing-table-default {
     border         : 1px solid #f1f1f1;
@@ -599,8 +667,8 @@ button:focus,
     margin : 0;
     }
 
-/*pricing list*/
 
+/* Pricing List */
 .pricing-section .pricing-list li {
     display : block;
     padding : 8px 0;
@@ -622,10 +690,10 @@ button:focus,
     position : relative;
     }
 
-/* --------------------------
- * Client Logo 
- *---------------------------*/
 
+/*--------------------------------------
+ * Client Logo
+ *-------------------------------------*/
 .client-logo a img {
     width              : 100%;
     opacity            : 1;
@@ -645,9 +713,10 @@ button:focus,
         }
     }
 
-/* ------------------
- * Google Map
- * ------------------*/
+
+/*--------------------------------------
+ * Google Map 
+ *-------------------------------------*/
 
 #googleMap {
     height        : 320px;
@@ -655,20 +724,18 @@ button:focus,
     margin-bottom : 100px;
     }
 
-/* ---------------------------
- * Subscribe Form
- * --------------------------- */
 
+/*--------------------------------------
+ * Subscribe Form  
+ *-------------------------------------*/
 .subscribe-form {
     text-align : center;
     }
 
 
-
-/*-------------------
- * Form Style
- *-------------------*/
-
+/*--------------------------------------
+ * Form Style  
+ *-------------------------------------*/
 .form-control {
     height        : 46px;
     padding       : 0 20px;
@@ -698,7 +765,6 @@ button:focus,
     border-color : #00906c;
     }
 
-
 @media (max-width : 600px) {
     .form-control.input-lg{
         min-width: auto;
@@ -706,12 +772,11 @@ button:focus,
         }
     }
 
-/* --------------------------------------------
- *   Footer
- *---------------------------------------------- */
 
+/*--------------------------------------
+ * Footer 
+ *-------------------------------------*/
 /* Copyright */
-
 .footer .copyright-section {
     font-size : 15px;
     color     : #888888;
@@ -723,9 +788,10 @@ button:focus,
     display     : block;
     }
 
-/* ---------------------------------------------- /*
- * Preloader
-/* ---------------------------------------------- */
+
+/*--------------------------------------
+ * Preloader 
+ *-------------------------------------*/
 #preloader {
     background : #ffffff;
     bottom     : 0;
@@ -772,17 +838,16 @@ button:focus,
     height: 100%;
 }
 
-/* ---------------------------------------------- /*
- * Custom Navbar Override 
-/* ---------------------------------------------- */
 
+/*--------------------------------------
+ * Custom Navbar Override (don't touch)
+ *-------------------------------------*/
 .navbar-brand img {
     height: 40px; 
     margin-right: 10px; 
 }
 
 @media (min-width: 1100px) {
-    
     .navbar .container-fluid {
         display: flex;
         align-items: center;
@@ -882,3 +947,5 @@ button:focus,
         padding: 10px 25px !important;
     }
 }
+
+
