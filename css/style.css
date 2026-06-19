@@ -432,9 +432,11 @@ button:focus,
 /*--------------------------------------
  * venue.html
  *-------------------------------------*/
- .venue-row {
+.venue-row {
     margin-bottom: 10px;
 	margin-left: 1px;
+	display: flex;
+    flex-direction: row;
 }
 
 .venue-text {
@@ -446,7 +448,6 @@ button:focus,
     height: 370px;
     object-fit: cover;
     display: block;
-
 }
 
 .venue-map {
@@ -454,31 +455,83 @@ button:focus,
     margin-bottom: 20px;
 }
 
-@media (max-width: 1200px) {
-    .venue-row .lead {
-        font-size: 18px;
-    }
-
-    .venue-img {
-        height: 310px;
-    }
+.attractions {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    text-align: center;
 }
 
-@media (max-width: 991px) {
-    .venue-text {
-        margin-top: 25px;
+.attraction-column {
+    flex: 1;
+}
+
+.attraction-column a {
+    display: block;
+    margin: 0.75rem 0;
+}
+
+.hotel-row {
+    text-align: center;
+}
+
+.hotel-card {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.hotel-card img {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.hotel-card > a {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.hotel-card p {
+    line-height: 1.4;
+}
+
+.hotel-note {
+    font-size: 0.9em;
+}
+
+@media (max-width: 1099px) {
+    .venue-row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
         text-align: center;
     }
 
-	.venue-row .lead {
-		font-size: 18px;
-	}
+    .venue-row > * {
+        width: auto;
+        max-width: none;
+        text-align: center;
+    }
 
     .venue-img {
+        width: 90vw;
+        max-width: 900px;
         height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
     }
+	.venue-row {
+		width: 100%;
+	}
 }
 
+@media(max-width: 800px) {
+	.attractions {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
 
 /*--------------------------------------
  * Section Wrapper
@@ -492,7 +545,7 @@ button:focus,
  * Section Title 
  *-------------------------------------*/
 .section-title {
-    margin-bottom : 60px;
+    margin-bottom : 40px;
     text-align    : center;
     }
 
